@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 
 use App\Models\discos;
 use Illuminate\Http\Request;
-use \Storage;
+use  \Storage;
 
 class discosController extends Controller
 {
