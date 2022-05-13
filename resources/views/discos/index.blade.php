@@ -53,7 +53,27 @@
                         </span>Descargar</button>
                    
                       </div>
-                </div>               
+                     
+                </div>   
+                <div class="columns">
+                
+                  <div class="column "> 
+                   
+                  <form method="POST" action="{{route('discos.destroy', $disco->id)}}">
+                    @csrf
+                    @method('DELETE')
+                    <button type="submit" class="button is-link is-outlined is-small"> 
+                      <span class="icon p-4">                         
+                      <i class="fas fa-trash"></i>
+                    </span></button>
+                  </form>
+                  <a href="{{route('discos.edit', $disco->id)}}" class="button is-link is-outlined is-small"> 
+                    <span class="icon p-4">                         
+                    <i class="fas fa-pen"></i>
+                  </span></a>
+                  </div>
+                 
+                </div>            
               </div>
             </div>
           </div>

@@ -86,6 +86,8 @@ class discosController extends Controller
         //
         $input = $request->all();
         $discos = discos::find($id);
+        $path = Storage::disk('public')->putFile('imagenes', $request->file('portada'));
+        $input['portada'] = str_ireplace('imagenes/',"",$path);
         $discos->update($input);
         return redirect()->route('discos.index')->with('status', 'Disco modificado correctamente.');
     }
