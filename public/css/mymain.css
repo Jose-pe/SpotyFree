@@ -1,0 +1,98 @@
+body
+{
+    background-color: #111111;
+}
+nav
+{
+    background-color: #1b1a1a !important;
+  
+}
+#contenedorlogin
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20rem;
+    height: 55rem;
+    
+}
+#formlogin
+{
+    margin-top: 10rem !important;
+    margin-bottom: 25rem;
+    background-color: rgb(32, 31, 31);
+    border: 1px solid rgb(63, 61, 61);   
+    margin-right: 2rem;
+    margin-left: 2rem;
+    
+}
+#formlogin input
+{
+    margin-bottom: 1rem;
+}
+.file-name
+{
+    color: white;
+}
+#remember
+{
+    color: white;
+}
+#discos
+{
+   margin: 3rem;
+   background-color: rgb(26, 24, 24);
+   
+   border: 1px solid rgb(107, 107, 107);
+}
+#artista
+{
+    color: whitesmoke;
+
+}
+#album
+{
+    color: rgb(179, 179, 179);
+}
+#anio
+{
+    color: whitesmoke;
+    font-size: large;
+    font-weight: bolder;
+}
+#calificacion
+{
+    display: none;
+}
+.estrella
+{
+    color: #5167a8;
+}
+
+.botonescard
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+
+footer
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #3a3a3a;
+    color: whitesmoke !important;
+}
+
+@media (max-width: 550px) {
+
+    footer{
+        
+        background-color: rgb(73, 46, 192) !important;
+    }
+
+}
+    
