@@ -14,25 +14,25 @@
     
     <div class="field">
         <div class="control">
-            <label for="album">Artista</label>
+            <label class="has-text-white" for="album">Artista</label>
     <input type="text" class="input is-large" placeholder="ARTISTA" name="artista" value="{{$disco->artista}}">
         </div>
     </div>  
     <div class="field">
         <div class="control">
-    <label for="album">Album</label>
+    <label class="has-text-white" for="album">Album</label>
     <input type="text" class="input is-large" name="album" value="{{$disco->album}}">
         </div>
         </div>  
         <div class="field">
             <div class="control">
-    <label for="anio">Año de Lanazamiento</label>
+    <label class="has-text-white" for="anio">Año de Lanazamiento</label>
     <input type="number" class="input is-large" name="anio" value="{{$disco->anio}}">
             </div>
             </div> 
             <div class="field">
                 <div class="control">
-    <label for="genero">Genero</label>
+    <label class="has-text-white" for="genero">Genero</label>
     <input type="text" class="input is-large" name="genero" value="{{$disco->genero}}">
                 </div>
                 </div> 
@@ -61,19 +61,19 @@
                 </div> 
                 <div class="field">
                     <div class="control">
-    <label for="enlace">Enlace</label>
+    <label class="has-text-white" for="enlace">Enlace</label>
     <input type="text" name="enlace" class="input is-large" value="{{$disco->enlace}}">
                     </div>
                     </div> 
                     <div class="field">
                         <div class="control">
-    <label for="calificacion">Calificacion</label>
+    <label class="has-text-white" for="calificacion">Calificacion</label>
     <input type="number" name="calificaciones" class="input is-large" value="{{$disco->calificaciones}}">
     </div>
     </div> 
-    <div class="field">
-        <div class="control">
-    <button class="button is-link is-large" type="submit"> GUARDAR CAMBIOS </button>
+    <div class="columns">
+        <div class="column">
+    <button class="button is-link is-large is-rounded is-fullwidth  mt-2" type="submit"> GUARDAR CAMBIOS </button>
 </div>
 </div> 
 </form>            

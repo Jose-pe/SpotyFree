@@ -59,10 +59,10 @@
                 
                   <div class="column "> 
                    
-                  <form method="POST" action="{{route('discos.destroy', $disco->id)}}">
+                  <form onclick=" return confirm('¿Seguro que quieres eliminar este disco?');" method="POST" action="{{route('discos.destroy', $disco->id)}}">
                     @csrf
                     @method('DELETE')
-                    <button type="submit" class="button is-link is-outlined is-small"> 
+                    <button  type="submit" class="button is-link is-outlined is-small"> 
                       <span class="icon p-4">                         
                       <i class="fas fa-trash"></i>
                     </span></button>

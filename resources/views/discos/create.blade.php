@@ -85,7 +85,7 @@
                         </div>
                     </div>
                     <div class="field">
-                        <button type="submit" class="button is-light is-large is-rounded is-fullwidth  mt-2">
+                        <button type="submit" class="button is-link is-large is-rounded is-fullwidth  mt-2">
                           Publicar Disco
                         </button>
                     </div>
