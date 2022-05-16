@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Models\discos;
 class HomeController extends Controller
 {
     /**
@@ -23,6 +23,13 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return redirect()->route('discos.index');
+        if (Auth()->user()->rol == "Admin") {
+            return redirect()->route('discos.index');
+        }
+        else{
+            $discos = discos::simplePaginate(12);
+            return view('home', compact('discos'));    
+        }
+        
     }
 }

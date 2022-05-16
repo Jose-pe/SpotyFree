@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\discos\discosController;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,9 +17,7 @@ use App\Http\Controllers\discos\discosController;
 
 //Route::get('listar', [discosController::class, 'index']);
 Route::view('/', 'welcome');
-Route::resource('discos', 'App\Http\Controllers\discos\discosController')->middleware('auth');
-
-
+Route::resource('discos', 'App\Http\Controllers\discos\discosController')->middleware('checkrol');
 
 Auth::routes();
 

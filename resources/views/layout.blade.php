@@ -17,7 +17,7 @@
         <nav class="navbar" role="navigation" >
             
             <div class="navbar-brand">
-                <a class="navbar-item" href="{{ route('discos.index') }}">
+                <a class="navbar-item">
                  <img src="/imagenes/applogo.png" alt="spotyfree" width="142" height="auto">
                 </a>
             </div>
