@@ -18,7 +18,8 @@ use App\Http\Controllers\discos\discosController;
 //Route::get('listar', [discosController::class, 'index']);
 Route::view('/', 'welcome');
 Route::resource('discos', 'App\Http\Controllers\discos\discosController')->middleware('checkrol');
-
+Route::get('listargeneros', [App\Http\Controllers\discos\discosController::class, 'listargeneros'] )->name('listargeneros');
+Route::get('buscadisco{$nombredisco}', [App\Http\Controllers\discosController::class, 'buscardisco'])->name('buscadisco');
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

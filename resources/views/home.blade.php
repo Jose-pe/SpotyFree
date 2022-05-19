@@ -3,8 +3,11 @@
 @section('contenido')
 <div class="container is-fluid">
     <div class="row justify-content-center">
-        <div class="col-md-8">
-            AQUI IRAN LOS TAGS
+        <div class="columns is-centered mt-4">
+          <div class="column is-8 tags are-medium" id="contenedorgeneros">
+            <span class="tag is-link">#rockcusqueño</span> 
+                    
+          </div>
         </div>
     </div>
     <div class="columns is-multiline ">
@@ -79,4 +82,5 @@
       
     </section>
 </div>
+<script src="js/discos.js"></script>
 @endsection

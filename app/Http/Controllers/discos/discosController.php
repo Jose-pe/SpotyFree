@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 use App\Models\discos;
 use Illuminate\Http\Request;
 use  \Storage;
+use Response;
 
 class discosController extends Controller
 {
@@ -105,4 +106,25 @@ class discosController extends Controller
         $discos->delete();
         return redirect()->route('discos.index')->with('status', 'Disco eliminado correctamente.');
     }
+
+    public function listargeneros(){
+        //->orderByRaw("RAND()")->limit(5) Lo pongo para generar datos RANDon
+        $generos = discos::select('genero')->orderByRaw("RAND()")->limit(10)->get();
+        return Response::json(
+            array('success'=>true,
+            'generos' => $generos           
+             
+            ),200);
+        
+    }
+
+    public function buscardisco($nombredisco){
+        //$discos = discos::find($nombredisco);
+    
+        return Response::json(
+            array('success'=>true,
+            'discos' => $discos           
+             
+            ),200);
+        }
 }
