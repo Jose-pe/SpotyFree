@@ -1,4 +1,4 @@
-console.log('HOLA SPOTYFREE');
+//console.log('HOLA SPOTYFREE');
 let contenedorgeneros = document.getElementById('contenedorgeneros');
 listargeneros();
 function listargeneros() {
@@ -8,9 +8,7 @@ function listargeneros() {
             .then((datageneros) => {
                 for (let index = 0; index < datageneros.generos.length; index++) {
                     contenedorgeneros.innerHTML +=
-                    '<a hfre="" class="tag is-link"><span>' + '#'+ datageneros.generos[index].genero  +'</span></a>' 
-                       
-                      
+                    '<a hfre="" class="tag is-link"><span>' + '#'+ datageneros.generos[index].genero  +'</span></a>'; 
                 }
             });
 }
