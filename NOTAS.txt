@@ -1,5 +1,5 @@
 //datos para la BD
 CREATE DATABASE IF NOT EXISTS `musicapi2` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
 create user super_webmaster identified by 'superweb@master';
-grant all privileges on superwebmaster.* to 'super_webmaster_user'@'localhost' identified by 'superweb@master';
+grant all privileges on *.* to 'super_webmaster_user'@'localhost' identified by 'superweb@master';
 flush privileges;
