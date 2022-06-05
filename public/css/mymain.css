@@ -92,7 +92,7 @@ footer
     #discos{
         margin: 0.8rem;
     }
-    .is-fluid {
+    .container.is-fluid {
         max-width: none !important;
         padding-left: 5px !important; 
         padding-right: 5px !important;
