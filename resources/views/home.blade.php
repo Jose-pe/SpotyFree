@@ -69,10 +69,9 @@
             <a class="button is-link mr-5" href="{{$discos->previousPageUrl()}}">
               <span class="icon mr-1">
                 <i class="fas fa-backward"></i>
-              </span> Anterior
+              </span> <strong class="controlstab"> Anterior </strong>
             </a>
-            <a class="button is-link ml-5" href="{{$discos->nextPageUrl()}}">Siguiente 
-             <span class="icon ml-1">
+            <a class="button is-link ml-5" href="{{$discos->nextPageUrl()}}"> <strong class="controlstab"> Siguiente </strong><span class="icon ml-1">
               <i class="fas fa-forward"></i>
               </span>   
              </a> 

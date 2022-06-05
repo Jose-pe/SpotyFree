@@ -107,6 +107,9 @@ footer
         
         background-color: rgb(130, 125, 153) !important;
     }
+    .controlstab{
+        display: none !important;
+    }
 
 }
     

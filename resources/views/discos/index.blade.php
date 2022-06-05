@@ -11,9 +11,9 @@
 
     </h2>
   </div>
-    <div class="columns is-multiline ">
+    <div class="columns is-multiline is-mobile">
         @foreach ($discos as $disco)
-        <div class="column is-one-third-desktop is-is-half-tablet">
+        <div class="column is-full-mobile is-one-third-desktop is-half-tablet">
            
         <div class="card" id="discos">
             <div class="card-image">
