@@ -86,12 +86,22 @@ footer
     background-color: #3a3a3a;
     color: whitesmoke !important;
 }
-
-@media (max-width: 550px) {
+@media (max-width: 1280px) {
 
     #discos{
         margin: 0.5rem !important;
     }
+    
+    footer{
+        
+        background-color: rgb(7, 1, 34) !important;
+    }
+
+}
+    
+@media (max-width: 550px) {
+
+    
     
     footer{
         
