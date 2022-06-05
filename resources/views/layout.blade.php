@@ -18,7 +18,7 @@
             
             <div class="navbar-brand">
                 <a class="navbar-item">
-                 <img src="imagenes/applogo.png" alt="spotyfree" width="142" height="auto">
+                 <img src="/imagenes/applogo.png" alt="spotyfree" width="142" height="auto">
                 </a>
             </div>
             <div class="navbar-menu">
