@@ -17,7 +17,7 @@
         <div class="card" id="discos">
             <div class="card-image">
               <figure class="image is-4by3">
-               <img src="storage/imagenes/{{$disco->portada}}" alt="Placeholder image">
+               <img src="/storage/imagenes/{{$disco->portada}}" alt="Placeholder image">
               </figure>
             </div>
             <div class="card-content">
