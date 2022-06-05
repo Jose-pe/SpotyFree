@@ -47,10 +47,10 @@
                     <div>
                     
                         
-                        <button class="button is-link is-outlined is-small"> 
+                        <a target="_blank" href="{{$disco->enlace}}" class="button is-link is-outlined is-small"> 
                           <span class="icon p-4">                         
                           <i class="fas fa-download"></i>
-                        </span>Descargar</button>
+                        </span>Descargar</a>
                    
                       </div>
                      
