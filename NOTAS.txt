@@ -3,3 +3,11 @@ CREATE DATABASE IF NOT EXISTS `musicapi2` DEFAULT CHARACTER SET utf8 COLLATE utf
 create user super_webmaster identified by 'superweb@master';
 grant all privileges on *.* to 'super_webmaster_user'@'localhost' identified by 'superweb@master';
 flush privileges;
+//migrar DATABASE
+php artisan migrate
+//crear usuarios con seeder
+php artisan db-seed --class=UserSeeder
+
+//linkear la carpeta storage
+php artisan storage:link
+
