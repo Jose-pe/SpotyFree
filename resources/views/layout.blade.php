@@ -54,7 +54,7 @@
                     @else                   
                     <div class="navbar-item">
                         <p class="control has-icons-left">
-                            <input class="input is-rounded" type="text" placeholder="Buscar Discos">
+                            <input class="input is-rounded" id="buscadordisco" type="text" placeholder="Buscar Discos">
     
                             <span class="icon is-small is-left">
                                 <i class="fas fa-search"></i>   

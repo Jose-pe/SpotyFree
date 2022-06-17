@@ -118,9 +118,9 @@ class discosController extends Controller
         
     }
 
-    public function buscardisco($nombredisco){
-        //$discos = discos::find($nombredisco);
-    
+    public function buscardisco($busqueda){
+        $discos = discos::where("artista", "LIKE", "%".$busqueda."%")->get();
+
         return Response::json(
             array('success'=>true,
             'discos' => $discos           

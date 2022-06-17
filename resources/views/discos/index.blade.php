@@ -118,4 +118,5 @@
 </ul>         --}} 
 
 </div>
+<script src="js/discos.js"></script>
 @endsection

@@ -15,3 +15,37 @@ function listargeneros() {
 
 
 
+
+let buscador = document.getElementById('buscadordisco');
+
+buscador.addEventListener('keyup', function(e){
+            //cambiar por js moderno
+        var keycode = e.keyCode || e.which;
+        
+        if (keycode == 13){
+            
+            buscardisco(buscador.value);
+        }
+   
+});
+
+
+
+
+function buscardisco(busqueda) {
+
+    
+    fetch("buscadisco/" + busqueda)
+            .then((response) => response.json())
+            .then((datadiscos) => {
+               
+                console.log( (datadiscos.discos));
+            
+                 
+                });
+            
+            }
+
+
+
+
