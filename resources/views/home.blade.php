@@ -10,7 +10,7 @@
           </div>
         </div>
     </div>
-    <div class="columns is-multiline is-mobile ">
+    <div class="columns is-multiline is-mobile " id="contenedordiscos">
         @foreach ($discos as $disco)
         <div class="column is-full-mobile is-one-third-desktop is-half-tablet">
            
