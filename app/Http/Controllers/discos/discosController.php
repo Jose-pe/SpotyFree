@@ -119,7 +119,7 @@ class discosController extends Controller
     }
 
     public function buscardisco($busqueda){
-        $discos = discos::where("artista", "LIKE", "%".$busqueda."%")->get();
+        $discos = discos::where("artista", "LIKE", "%".$busqueda."%")->orWhere("album","LIKE","%".$busqueda."%")->get();
 
         return Response::json(
             array('success'=>true,
