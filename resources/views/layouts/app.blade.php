@@ -20,15 +20,24 @@
                 <a class="navbar-item">
                  <img src="imagenes/applogo.png" alt="spotyfree" width="142" height="auto">
                 </a>
+                       
+               
             </div>
+       
+              
+           
+
+
+
+            
             <div class="navbar-menu">
-                <div class="navbar-start">
+                
                     @guest     
                     @if (Route::has('login'))
                     @endif
                     @else
                     <div class="buttons ml-5">
-                    <a  class="button is-link ml-3" href="{{route('discos.index')}}">
+                    <a  class="button is-link mr-5 ml-3" href="{{route('discos.index')}}">
                         <span class="icon mr-1">
 
                             <i class="fas fa-compact-disc"></i>
@@ -36,6 +45,25 @@
                           </span>
                            Listar Discos
                         </a> 
+                        
+                        <a class="button is-link" id="salirresp" href="{{ route('logout') }}"
+                        onclick="event.preventDefault();
+                        document.getElementById('logout-form').submit();">
+                     <span class="icon p-5">
+
+                       <i class="fas fa-sign-out-alt"></i>
+                            
+                    
+
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                @csrf
+                            </form>
+                        </span>Salir
+                       
+                        </a>  
+
+                        
+
                    
                     </div>   
                     @endguest
@@ -70,7 +98,7 @@
                             @else
                                
 
-                            <a class="button is-link " href="{{ route('logout') }}"
+                            <a class="button is-link" id="salirdesk" href="{{ route('logout') }}"
                                 onclick="event.preventDefault();
                                 document.getElementById('logout-form').submit();">
                              <span class="icon p-5">

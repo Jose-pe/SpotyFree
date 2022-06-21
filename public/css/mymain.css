@@ -7,6 +7,9 @@ nav
     background-color: #1b1a1a !important;
   
 }
+.navbar-menu{
+    background-color: #1B1A1A;
+}
 #contenedorlogin
 {
     display: flex;
@@ -76,6 +79,9 @@ nav
     justify-content: space-between;
 
 }
+#salirresp{
+    display: none;
+}
 
 
 footer
@@ -110,6 +116,34 @@ footer
     .controlstab{
         display: none !important;
     }
+    .navbar-menu{
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar-start{
+        display: flex;
+        flex-direction: row;       
 
+    }
+    #salirdesk{
+        display: none;
+    }
+    #salirresp{
+        display: flex;
+        margin-left: 7rem;
+    }
+
+}
+
+@media(max-width: 403px){
+    #salirresp{
+        margin-left: 4rem;
+    }
+}
+
+@media(max-width: 322px){
+    #salirresp{
+        margin-left: 0.1rem;
+    }
 }
     
