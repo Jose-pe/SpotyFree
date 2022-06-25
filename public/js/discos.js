@@ -131,6 +131,15 @@ function buscardisco(busqueda) {
                     '<i class="fas fa-star estrella"></i>'+
                     '<i class="fas fa-star estrella"></i>'
                   }
+                  if (datadiscos.discos[index].calificaciones == 5) {
+                    let calificacion = document.getElementsByClassName('calificacion');
+                    calificacion[index].innerHTML = 
+                    '<i class="fas fa-star estrella"></i>'+
+                    '<i class="fas fa-star estrella"></i>'+
+                    '<i class="fas fa-star estrella"></i>'+
+                    '<i class="fas fa-star estrella"></i>'+
+                    '<i class="fas fa-star estrella"></i>'
+                  }
                }       
                     
         });
