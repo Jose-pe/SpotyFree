@@ -82,6 +82,9 @@ nav
 #salirresp{
     display: none;
 }
+#logoutmovil{
+    display: none;
+}
 
 
 footer
@@ -131,6 +134,22 @@ footer
     #salirresp{
         display: flex;
         margin-left: 7rem;
+    }
+    #logoutmovil{
+        display: flex;
+    }
+    #logoutdesk{
+        display: none;
+    }
+    .buttonnav{
+        font-size: 0.9rem;
+    }
+    #contenedorgeneros{
+        display: none;
+    }
+    .containerbuttons{
+        display: flex;
+       justify-content: center;
     }
 
 }

@@ -22,13 +22,13 @@
                 </a>
             </div>
             <div class="navbar-menu">
-                <div class="navbar-start">
+                <div class="navbar-start containerbuttons">
                     @guest     
                     @if (Route::has('login'))
                     @endif
                     @else
-                    <div class="buttons ml-5">
-                    <a  class="button is-link ml-3" href="{{route('discos.index')}}">
+                    <div class="buttons ">
+                    <a  class="button is-link ml-1 buttonnav" href="{{route('discos.index')}}">
                         <span class="icon mr-1">
 
                             <i class="fas fa-compact-disc"></i>
@@ -36,12 +36,44 @@
                           </span>
                            Listar Discos
                         </a> 
-                    <a class="button is-link ml-5" href="{{route('discos.create')}}">
+                    <a class="button is-link ml-1 buttonnav" href="{{route('discos.create')}}">
                         <span class="icon mr-1">
 
                             <i class="far fa-plus-square p-4"> </i>
                             
                           </span> Crear Disco</a> 
+
+                          
+                           
+                                @guest  
+                                @if (Route::has('login'))
+                                @endif
+    
+                                @if (Route::has('register'))
+                                @endif
+    
+                                @else
+                                   
+    
+                                <a class="button is-link buttonnav" id="logoutmovil" href="{{ route('logout') }}"
+                                    onclick="event.preventDefault();
+                                    document.getElementById('logout-form').submit();">
+                                 <span class="icon p-1">
+    
+                                   <i class="fas fa-sign-out-alt"></i>
+                                        
+                                
+    
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                            @csrf
+                                        </form>
+                                    </span>
+                                   
+                                    </a>  
+                            @endguest
+                         
+
+                          
                     </div>   
                     @endguest
                 </div>
@@ -63,7 +95,7 @@
     
                     </div>           
                     @endguest
-                    <div class="navbar-item">
+                    <div class="navbar-item" id="logoutdesk">
                         <div class="buttons">
                             @guest  
                             @if (Route::has('login'))
@@ -75,7 +107,7 @@
                             @else
                                
 
-                            <a class="button is-link " href="{{ route('logout') }}"
+                            <a class="button is-link "  href="{{ route('logout') }}"
                                 onclick="event.preventDefault();
                                 document.getElementById('logout-form').submit();">
                              <span class="icon p-5">

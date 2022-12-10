@@ -5,12 +5,7 @@
 
 
 <div class="container is-fluid">
-  <div class="section">
-    <h2 class="title">
-     Hola de nuevo {{ Auth::user()->name }} !!! 
-
-    </h2>
-  </div>
+ 
   <div class="row justify-content-center">
     <div class="columns is-centered mt-4">
       <div class="column is-8 tags are-medium" id="contenedorgeneros">

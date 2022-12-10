@@ -31,12 +31,12 @@
 
             
             <div class="navbar-menu">
-                
+                <div class="navbar-start containerbuttons">
                     @guest     
                     @if (Route::has('login'))
                     @endif
                     @else
-                    <div class="buttons ml-5">
+                    <div class="buttons ml-3">
                     <a  class="button is-link mr-5 ml-3" href="{{route('discos.index')}}">
                         <span class="icon mr-1">
 
@@ -67,6 +67,7 @@
                    
                     </div>   
                     @endguest
+                </div>
                 </div>
 
                 <div class="navbar-end">
